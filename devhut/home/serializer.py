@@ -1,9 +1,4 @@
-from dataclasses import field
-from datetime import datetime
-from time import time
 from rest_framework import serializers
-
-
 from . models import Blog, BlogCategory, Comments, Follower
 from register.serializer import UserSerializer
 from register.models import Account

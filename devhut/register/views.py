@@ -1,9 +1,5 @@
 
-from ast import Return
-from asyncio.windows_events import NULL
-from email import message, message_from_string
-from os import stat
-from  rest_framework.decorators import api_view,permission_classes
+from  rest_framework.decorators import api_view
 from rest_framework.response import Response
 # customising token claims
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -15,7 +11,6 @@ from django.contrib.auth.hashers import make_password
 from rest_framework.permissions import IsAuthenticated,IsAdminUser
 from. import verify
 #forgot email
-from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
 from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator   
@@ -23,7 +18,6 @@ from django.utils.http import urlsafe_base64_encode,urlsafe_base64_decode
 from devhut import settings
 from django.core.mail import send_mail
 from rest_framework import status
-from django.shortcuts import get_object_or_404
 from rest_framework import status
 
 

@@ -6,7 +6,7 @@ from rest_framework.permissions import IsAuthenticated
 from register.serializer import UserSerializer
 
 from . models import Blog, BlogCategory,Follower, Likes
-from . serializer import AdminPanelCommentSerializer, AuthorProfileSerializer, BlogOnlySerializer, BlogSerializer, CategorySerializer, CommentSerializer, CompilerSerializer,FollowersSerializer
+from . serializer import AdminPanelCommentSerializer, AuthorProfileSerializer,BlogOnlySerializer, BlogSerializer, CategorySerializer, CommentSerializer, CompilerSerializer,FollowersSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.parsers import MultiPartParser, FormParser
